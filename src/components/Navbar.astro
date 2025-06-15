@@ -1,0 +1,53 @@
+---
+import Image from "astro/components/Image.astro";
+import WhiteLogo from "../assets/transparent_logo.png";
+---
+
+<nav class="absolute top-0 left-0 w-full z-30 flex items-center justify-between px-6 sm:px-12 lg:px-20 py-5 bg-transparent">
+    <div class="w-1/2 sm:w-1/3 lg:w-auto">
+        <a href="/" class="cursor-pointer">
+            <Image class="w-48 sm:w-60" src={WhiteLogo} alt="Large white logo" />
+        </a>
+    </div>
+
+    <div class="hidden lg:flex lg:w-2/3 justify-end">
+        <ul class="flex items-center text-white font-bold">
+            <li><a class="cursor-pointer font-roboto-regular mx-5 hover:underline hover:underline-offset-2" href="/industrias">Industrias</a></li>
+            <li><a class="cursor-pointer font-roboto-regular mx-5 hover:underline hover:underline-offset-2" href="/soluciones">Soluciones</a></li>
+            <li><a class="cursor-pointer font-roboto-regular mx-5 hover:underline hover:underline-offset-2" href="/servicios">Servicios</a></li>
+            <li><a class="cursor-pointer font-roboto-regular mx-5 hover:underline hover:underline-offset-2" href="/sobre_nosotros">Sobre Nosotros</a></li>
+            <li><a class="cursor-pointer font-roboto-bold ml-5 bg-blue-900 px-4 py-2 rounded-lg text-white hover:bg-blue-800 transition-colors duration-300" href="/contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="lg:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="menu" class="hidden absolute top-full left-0 w-full bg-gray-900 bg-opacity-95 lg:hidden">
+        <ul class="flex flex-col items-center text-white font-bold py-8">
+            <li class="w-full text-center py-3"><a class="cursor-pointer font-roboto-regular hover:underline hover:underline-offset-2" href="/industrias">Industrias</a></li>
+            <li class="w-full text-center py-3"><a class="cursor-pointer font-roboto-regular hover:underline hover:underline-offset-2" href="/soluciones">Soluciones</a></li>
+            <li class="w-full text-center py-3"><a class="cursor-pointer font-roboto-regular hover:underline hover:underline-offset-2" href="/servicios">Servicios</a></li>
+            <li class="w-full text-center py-3"><a class="cursor-pointer font-roboto-regular hover:underline hover:underline-offset-2" href="/sobre_nosotros">Sobre Nosotros</a></li>
+            <li class="mt-4"><a class="cursor-pointer font-roboto-bold bg-blue-900 px-6 py-3 rounded-lg text-white hover:bg-blue-800 transition-colors duration-300" href="/contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        if (menuBtn && menu) {
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    });
+</script>

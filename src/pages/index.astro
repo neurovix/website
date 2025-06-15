@@ -1,0 +1,248 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../assets/hero_image.png";
+import Image from "astro/components/Image.astro";
+import SoftwareIMG from "../assets/software.png";
+import IA from "../assets/ia.png";
+import ServerIMG from "../assets/servidor.png";
+import Web from "../assets/web_gray.png";
+import Mobile from "../assets/iphone_gray.png";
+import Mantemiento from "../assets/mantenimiento_gray.png";
+import Automatizacion from "../assets/nodos_gray.png";
+import InteligenciaArtificial from "../assets/ia_gray.png";
+import Cloud from "../assets/nube_gray.png";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+  <main class="overflow-hidden">
+    <Navbar />
+
+    <section class="relative w-full h-screen">
+      <Image class="w-full h-full object-cover" src={Hero} alt="Hero image" />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="px-5 lg:px-0 mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20"
+      >
+        <h1 class="text-3xl lg:text-5xl font-bold drop-shadow-lg">
+          Desarrollo de Software y Automatizaciones con IA
+        </h1>
+        <p class="text-sm lg:text-xl font-roboto-regular mt-4 drop-shadow-md">
+          Impulsa la eficiencia de tu empresa con desarrollo de software a
+          medida o con ayuda de inteligencia artificial
+        </p>
+        <a
+          href="/servicios"
+          class="px-4 py-2 font-roboto-regular rounded-lg bg-blue-800 hover:underline hover:cursor-pointer text-white font-bold mt-5"
+        >
+          VER SERVICIOS
+        </a>
+      </div>
+    </section>
+
+    <section class="py-20 px-10 bg-white text-gray-900 font-roboto-regular">
+      <div
+        class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center"
+      >
+        <div class="lg:border-r-2 lg:pr-10">
+          <Image
+            src={SoftwareIMG}
+            class="mx-auto pb-5"
+            alt="Desarrollo de Software"
+          />
+          <h2 class="text-2xl font-bold mb-4">Desarrollo de Software</h2>
+          <p class="text-base">
+            Creamos plataformas y sistemas a medida que se adaptan 100% a las
+            necesidades de tu empresa o institución. Desde aplicaciones mobiles,
+            aplicaciones web o sistemas de gestión interna.
+          </p>
+        </div>
+        <div>
+          <Image src={IA} class="mx-auto pb-5" alt="Automatizaciones con IA" />
+          <h2 class="text-2xl font-bold mb-4">Automatizaciones con IA</h2>
+          <p class="text-base">
+            Ahorra cientos de horas al mes automatizando tareas repetitivas:
+            generación de reportes, respuesta a mensajes, actualización de bases
+            de datos y más, todo con inteligencia artificial integrada.
+          </p>
+        </div>
+        <div class="lg:border-l-2 lg:pl-10">
+          <Image
+            src={ServerIMG}
+            class="mx-auto pb-5"
+            alt="Instalacion de IA local"
+          />
+          <h2 class="text-2xl font-bold mb-4">Instalación de IA Local</h2>
+          <p class="text-base">
+            Configuramos modelos de lenguaje e inteligencia artificial que
+            funcionan en tus propios servidores o computadoras, sin depender de
+            la nube. Más control, privacidad y sin costos recurrentes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="px-6 md:px-20 py-20 bg-gradient-to-b from-blue-50 to-white font-roboto-regular"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-12">
+          Nuestros Servicios
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Web}
+              alt="Desarrollo web"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Desarrollo Web
+            </h2>
+            <p class="text-sm text-gray-600">
+              Aplicaciones web rápidas, seguras y escalables hechas a la medida
+              de tu empresa.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Mobile}
+              alt="Desarrollo móvil"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Apps Móviles
+            </h2>
+            <p class="text-sm text-gray-600">
+              Aplicaciones Android y iOS con experiencia de usuario fluida y
+              profesional.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Mantemiento}
+              alt="Soporte técnico"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Soporte & Mantenimiento
+            </h2>
+            <p class="text-sm text-gray-600">
+              Mantenemos tus sistemas en óptimas condiciones con soporte técnico
+              confiable.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Automatizacion}
+              alt="Automatización"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Automatización de Procesos
+            </h2>
+            <p class="text-sm text-gray-600">
+              Eliminamos tareas repetitivas con automatizaciones eficientes y
+              personalizadas.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={InteligenciaArtificial}
+              alt="IA"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Inteligencia Artificial
+            </h2>
+            <p class="text-sm text-gray-600">
+              Potencia tus operaciones con modelos de IA que aprenden y
+              optimizan tu flujo de trabajo.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image src={Cloud} alt="Cloud" class="w-16 h-16 mx-auto mb-4" />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Instalación Local o en la Nube
+            </h2>
+            <p class="text-sm text-gray-600">
+              Despliegue de soluciones en servidores locales o nube según tus
+              necesidades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="px-6 md:px-20 py-16 bg-white text-gray-900 font-roboto-regular"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12">Nuestros Productos Clave</h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center"
+        >
+          <div
+            class="bg-blue-100 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Generación de Nómina Semanal</h3>
+            <p class="text-sm">
+              Automatiza el cálculo y envío de nómina a partir de registros de
+              asistencia, turnos y configuraciones.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-100 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Registro de Asistencias</h3>
+            <p class="text-sm">
+              Controla entradas y salidas de empleados desde celular o tablet,
+              con validación automática.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-100 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Analizador de Facturas y CV</h3>
+            <p class="text-sm">
+              Extrae datos importantes de PDFs de facturas o currículums y
+              ordénalos en tu base de datos.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-100 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Chatbots para WhatsApp</h3>
+            <p class="text-sm">
+              Responde automáticamente dudas frecuentes, genera cotizaciones o
+              da seguimiento a clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>

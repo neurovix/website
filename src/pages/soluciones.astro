@@ -1,0 +1,137 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+import Hero from "../assets/soluciones_hero.png";
+---
+
+<Layout>
+  <main>
+    <Navbar />
+
+    <section class="relative w-full h-screen">
+      <Image
+        class="w-full h-full object-cover"
+        src={Hero}
+        alt="Hero Soluciones"
+      />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20 px-4"
+      >
+        <span class="text-sm uppercase tracking-widest text-blue-300 mb-2"
+          >Soluciones por Industria</span
+        >
+        <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">
+          Tecnología que se adapta a tu sector
+        </h1>
+        <p
+          class="text-lg md:text-xl font-roboto-regular mt-4 drop-shadow-md max-w-3xl"
+        >
+          Automatizamos procesos, mejoramos la eficiencia y creamos soluciones
+          inteligentes específicas para tu industria.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección: Soluciones por industria -->
+    <section
+      id="sectores"
+      class="bg-white py-20 px-6 md:px-20 text-gray-900 font-roboto-regular"
+    >
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">
+          Soluciones adaptadas a tu industria
+        </h2>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+          Ya sea que estés en manufactura, salud, educación u otro sector, te
+          ayudamos a resolver problemas reales con tecnología real:
+          automatización, inteligencia artificial y desarrollo personalizado.
+        </p>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left"
+        >
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Manufactura</h3>
+            <p class="text-sm mb-4">
+              Automatiza reportes, control de calidad y producción en tiempo
+              real.
+            </p>
+          </div>
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Salud</h3>
+            <p class="text-sm mb-4">
+              Agenda inteligente, recordatorios automáticos y bots para
+              pacientes.
+            </p>
+          </div>
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Educación</h3>
+            <p class="text-sm mb-4">
+              Plataformas personalizadas, automatización de evaluaciones y
+              asistencia.
+            </p>
+          </div>
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Logística y Transporte</h3>
+            <p class="text-sm mb-4">
+              Rutas optimizadas, entregas controladas y seguimiento en tiempo
+              real.
+            </p>
+          </div>
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Comercio y Retail</h3>
+            <p class="text-sm mb-4">
+              Chatbots, inventario automatizado y facturación inteligente.
+            </p>
+          </div>
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Sector Público</h3>
+            <p class="text-sm mb-4">
+              Digitaliza trámites, usa IA para atención ciudadana y controla
+              personal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Soluciones a medida -->
+    <section
+      class="bg-blue-900 text-white py-20 px-6 md:px-20 text-center font-roboto-regular"
+    >
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Creamos soluciones a medida para tu empresa
+        </h2>
+        <p class="text-lg md:text-xl mb-8 text-blue-100">
+          ¿Tu empresa tiene procesos únicos o enfrenta desafíos específicos?
+          Podemos ayudarte a desarrollar una solución completamente
+          personalizada que se adapte a tus flujos, sistemas y visión.
+        </p>
+        <a
+          href="/contacto"
+          class="px-6 py-3 bg-white text-blue-900 rounded-lg font-bold hover:bg-gray-200 transition"
+        >
+          HABLEMOS DE TU PROYECTO
+        </a>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>

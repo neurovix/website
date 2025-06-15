@@ -1,0 +1,86 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+import Hero from "../assets/sobre_nosotros_hero.png";
+---
+
+<Layout>
+  <main>
+    <Navbar />
+
+    <section class="relative w-full h-screen">
+      <Image
+        class="w-full h-full object-cover"
+        src={Hero}
+        alt="Hero Sobre Nosotros"
+      />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20 px-4"
+      >
+        <span class="text-sm uppercase tracking-widest text-blue-300 mb-2">
+          Sobre Nosotros
+        </span>
+        <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">
+          Creadores de tecnología con propósito
+        </h1>
+        <p
+          class="text-lg md:text-xl font-roboto-regular mt-4 drop-shadow-md max-w-3xl"
+        >
+          Somos un equipo apasionado por transformar ideas en soluciones que
+          generan valor real a empresas e industrias.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="px-6 md:px-20 py-20 bg-white font-roboto-regular text-gray-800"
+    >
+      <div class="max-w-5xl mx-auto space-y-16">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Quiénes somos?</h2>
+          <p class="text-lg">
+            En <strong>Neurovix</strong>, somos una empresa de tecnología
+            dedicada a la creación de software, automatizaciones inteligentes y
+            soluciones de inteligencia artificial. Combinamos creatividad,
+            ingeniería y visión de futuro para llevar a nuestros clientes al
+            siguiente nivel.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div>
+            <h3 class="text-2xl font-semibold mb-3">Nuestra Misión</h3>
+            <p class="text-base leading-relaxed">
+              Ayudar a empresas a optimizar sus procesos, reducir sus costos y
+              aumentar su competitividad mediante el uso de soluciones
+              tecnológicas personalizadas y accesibles.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold mb-3">Nuestra Visión</h3>
+            <p class="text-base leading-relaxed">
+              Ser líderes en Latinoamérica en innovación tecnológica, ofreciendo
+              soluciones inteligentes que transformen la manera en que las
+              empresas operan.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center pt-8">
+          <a
+            href="/contacto"
+            class="inline-block bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900 transition"
+          >
+            Conoce más o contáctanos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
