@@ -1,48 +1,50 @@
-# Astro Starter Kit: Basics
+# 🧠 Neurovix – Soluciones Inteligentes para tu Negocio
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido al repositorio oficial de **Neurovix**, donde el **desarrollo de software a medida**, la **automatización inteligente de procesos** y la **creación de contenido visual profesional** se combinan para llevar a tu empresa al siguiente nivel.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 ¿Qué es Neurovix?
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+**Neurovix** es una empresa mexicana dedicada a transformar ideas en soluciones tecnológicas efectivas. Nos especializamos en:
 
-## 🚀 Project Structure
+- ✅ **Desarrollo de software personalizado** según las necesidades de tu negocio.
+- 🤖 **Automatización de procesos con inteligencia artificial**, para aumentar la eficiencia operativa.
+- 🎨 **Creación de anuncios visuales, mockups y flyers profesionales** que elevan tu marca.
+- 📊 Integraciones visuales y funcionales con interfaces modernas y limpias.
 
-Inside of your Astro project, you'll see the following folders and files:
+Este sitio web presenta nuestra identidad, servicios y una forma de contacto directa con potenciales clientes.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Tecnologías utilizadas
 
-## 🧞 Commands
+El proyecto está construido con tecnologías modernas y eficientes:
 
-All commands are run from the root of the project, from a terminal:
+- 🌟 [Astro.js](https://astro.build/) – Framework web moderno, rápido y optimizado.
+- 💨 [Tailwind CSS](https://tailwindcss.com/) – Framework de estilos utilitario para construir interfaces elegantes sin esfuerzo.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+## 📸 Vista previa
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+![Preview de Neurovix](./public/preview.png)
+
+> *Este es un mockup de ejemplo. Asegúrate de agregar tu captura real en la carpeta `/public` y actualizar el nombre de archivo si es necesario.*
+
+---
+
+## 📦 Instalación y ejecución local
+
+Sigue estos pasos para correr el proyecto en tu máquina:
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/neurovix/website.git
+cd website
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Ejecutar en modo desarrollo
+npm run dev
