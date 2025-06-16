@@ -1,6 +1,7 @@
 ---
 import Image from "astro/components/Image.astro";
 import WhiteLogo from "../assets/transparent_logo.png";
+import English from "../assets/english.png";
 ---
 
 <nav class="absolute top-0 left-0 w-full z-30 flex items-center justify-between px-6 sm:px-12 lg:px-20 py-5 bg-transparent">
@@ -17,6 +18,7 @@ import WhiteLogo from "../assets/transparent_logo.png";
             <li><a class="cursor-pointer font-roboto-regular mx-5 hover:underline hover:underline-offset-2" href="/servicios">Servicios</a></li>
             <li><a class="cursor-pointer font-roboto-regular mx-5 hover:underline hover:underline-offset-2" href="/sobre_nosotros">Sobre Nosotros</a></li>
             <li><a class="cursor-pointer font-roboto-bold ml-5 bg-blue-900 px-4 py-2 rounded-lg text-white hover:bg-blue-800 transition-colors duration-300" href="/contacto">Contacto</a></li>
+            <li><a href="/en/"><Image class="w-10 hover:scale-125 ml-5" src={English} alt="english flag" /></a></li>
         </ul>
     </div>
 
@@ -35,6 +37,7 @@ import WhiteLogo from "../assets/transparent_logo.png";
             <li class="w-full text-center py-3"><a class="cursor-pointer font-roboto-regular hover:underline hover:underline-offset-2" href="/servicios">Servicios</a></li>
             <li class="w-full text-center py-3"><a class="cursor-pointer font-roboto-regular hover:underline hover:underline-offset-2" href="/sobre_nosotros">Sobre Nosotros</a></li>
             <li class="mt-4"><a class="cursor-pointer font-roboto-bold bg-blue-900 px-6 py-3 rounded-lg text-white hover:bg-blue-800 transition-colors duration-300" href="/contacto">Contacto</a></li>
+            <li><a href="/en/"><Image class="w-10 hover:scale-125 text-center mt-4" src={English} alt="english flag" /></a></li>
         </ul>
     </div>
 </nav>

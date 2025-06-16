@@ -1,0 +1,46 @@
+---
+import WhiteLogo from "../assets/transparent_logo.png";
+import Image from "astro/components/Image.astro";
+---
+
+<footer class="bg-gray-600 text-white font-roboto-regular px-10 md:px-20 py-12">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div>
+      <Image src={WhiteLogo} alt="Logo" class="w-60 mb-5" />
+      <h1 class="text-2xl font-bold mb-4">Neurovix</h1>
+      <p class="text-sm">
+        Automation, artificial intelligence, and custom software development for businesses and institutions.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-bold mb-4">Links</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/en/industries" class="hover:underline">Industries</a></li>
+        <li><a href="/en/solutions" class="hover:underline">Solutions</a></li>
+        <li><a href="/en/services" class="hover:underline">Services</a></li>
+        <li><a href="/en/about_us" class="hover:underline">About Us</a></li>
+        <li><a href="/en/contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-lg font-bold mb-4">Contact</h2>
+      <ul class="text-sm space-y-2">
+        <li><span class="font-semibold">Phone:</span> 844 858 0335</li>
+        <li>
+          <span class="font-semibold">Email:</span> neurovix.nv@gmail.com
+        </li>
+        <li>
+          <span class="font-semibold">Location:</span> Saltillo, Coahuila, Mexico
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400"
+  >
+    © {new Date().getFullYear()} Neurovix. All rights reserved.
+  </div>
+</footer>

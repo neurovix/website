@@ -1,0 +1,173 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import Hero from "../../../assets/hero_supermarketml.png";
+import MockupSistema1 from "../../../assets/companies/superml_1.png";
+import MockupSistema2 from "../../../assets/companies/superml_2.png";
+import SuperMarketML from "../../../assets/companies/supermarket-ml.png";
+import FooterEn from "../../../components/FooterEn.astro";
+import NavbarSP from "../../../components/NavbarSP.astro";
+---
+
+<Layout>
+  <main>
+    <NavbarSP />
+
+    <!-- Hero -->
+    <section class="relative w-full h-screen">
+      <Image class="w-full h-full object-cover" src={Hero} alt="Hero image" />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="px-5 lg:px-0 mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20"
+      >
+        <Image src={SuperMarketML} alt="Super Market ML Logo" />
+        <h1 class="font-extrabold my-4 text-5xl">Super Market ML</h1>
+        <h1 class="text-3xl lg:text-4xl font-bold drop-shadow-lg">
+          Attendance and Weekly Payroll Management System
+        </h1>
+        <p class="text-sm lg:text-xl font-roboto-regular mt-4 drop-shadow-md">
+          Forget about recording attendance in notebooks: digitize and
+          automate your business's weekly payroll.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT IS IT? -->
+    <section class="bg-gray-100 py-16 px-6 md:px-20 text-center text-gray-700">
+      <h2 class="text-3xl font-bold mb-6">
+        What is the attendance and payroll system?
+      </h2>
+      <p class="max-w-4xl mx-auto text-lg">
+        It's a solution created by Neurovix that allows you to record daily
+        staff attendance and automatically calculate weekly payroll. Ideal for
+        businesses like stores, workshops, or small businesses that want to
+        leave behind notebook and Excel sheet control.
+      </p>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="bg-white py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-10">
+        Benefits for Super Market ML
+      </h2>
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700"
+      >
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          ✅ Daily attendance recording in seconds
+        </div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          ✅ Automatic weekly payroll calculation
+        </div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          ✅ Control of delays and absences with visual reports
+        </div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          ✅ Access from any phone or computer
+        </div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          ✅ Data security and cloud backup
+        </div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">
+          ✅ Administrative time reduction by more than 70%
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="bg-gray-50 py-20 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-10">How does it work?</h2>
+      <div class="grid md:grid-cols-5 gap-6 text-center text-sm text-gray-700">
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md"
+          >
+            1
+          </div>
+          <p>Employee records their check-in or check-out</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md"
+          >
+            2
+          </div>
+          <p>System saves attendance in real time</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md"
+          >
+            3
+          </div>
+          <p>Payroll is automatically generated each week</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md"
+          >
+            4
+          </div>
+          <p>Attendance and payment reports can be reviewed</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md"
+          >
+            5
+          </div>
+          <p>Everything is stored and accessible at any time</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM MOCKUP -->
+    <section class="bg-white py-20 px-6 md:px-20 w-full text-center">
+      <h2 class="text-3xl font-bold mb-6">This is how it looks inside</h2>
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <Image
+          src={MockupSistema1}
+          class="rounded-xl w-full md:w-1/2 max-w-md"
+          alt="System mockup"
+        />
+        <Image
+          src={MockupSistema2}
+          class="rounded-xl w-full md:w-1/2 max-w-md"
+          alt="System mockup"
+        />
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-gray-100 py-20 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">What our clients say</h2>
+      <blockquote class="max-w-3xl mx-auto text-lg italic text-gray-700">
+        "Before, we kept everything on sheets and notebooks. Now with Neurovix's
+        system, attendance control and payroll is fast, clear and error-free.
+        It literally saves me hours on payroll days, which used to take us 2 to
+        3 stressful hours."
+      </blockquote>
+      <p class="mt-4 text-sm text-gray-500">
+        Mr. Felipe Rios - Owner of Super Market ML
+      </p>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-blue-800 text-white text-center py-20 px-6 md:px-20">
+      <h2 class="text-4xl font-bold mb-4">
+        Ready to automate your attendance?
+      </h2>
+      <p class="text-lg mb-6">
+        Request a personalized demo and discover how we can help you.
+      </p>
+      <a
+        href="/en/contact"
+        class="bg-white text-blue-800 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
+      >
+        Request Quote
+      </a>
+    </section>
+
+    <FooterEn />
+  </main>
+</Layout>

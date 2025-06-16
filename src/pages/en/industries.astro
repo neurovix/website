@@ -1,0 +1,140 @@
+---
+import NavbarSP from "../../components/NavbarSP.astro";
+import Layout from "../../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import Hero from "../../assets/industria_hero.png";
+import Manufactura from "../../assets/manufactura.png";
+import Salud from "../../assets/salud.png";
+import Educacion from "../../assets/educacion.png";
+import Logistica from "../../assets/logistica.png";
+import Comercio from "../../assets/comercio.png";
+import Marketing from "../../assets/marketing.png";
+import FooterEn from "../../components/FooterEn.astro";
+---
+
+<Layout>
+  <main class="overflow-hidden">
+    <NavbarSP />
+
+    <section class="relative w-full h-screen">
+      <Image class="w-full h-full object-cover" src={Hero} alt="Hero image" />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="lg:px-0 px-5 mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20"
+      >
+        <h1 class="text-3xl lg:text-5xl font-bold drop-shadow-lg">
+          We Connect Technology with your Business
+        </h1>
+        <p class="text-lg lg:text-xl font-roboto-regular mt-4 drop-shadow-md">
+          Every industry is unique. We help you automate, grow and make
+          decisions with intelligence
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="px-6 md:px-20 py-20 bg-white text-gray-800 font-roboto-regular"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">Industries We Drive</h2>
+        <p class="text-lg text-gray-600 mb-12">
+          Our technology adapts to multiple sectors to solve real problems with
+          intelligent and automated solutions.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <Image
+              src={Manufactura}
+              alt="Manufacturing industry"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Manufacturing and Production</h3>
+            <p class="text-sm text-gray-600">
+              Report automation, inventory control, predictive maintenance and
+              process traceability.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <Image
+              src={Salud}
+              alt="Healthcare"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Healthcare and Clinics</h3>
+            <p class="text-sm text-gray-600">
+              Patient management systems, automatic reminders and medical
+              history analysis with AI.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <Image
+              src={Educacion}
+              alt="Education"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Education and Training</h3>
+            <p class="text-sm text-gray-600">
+              Educational platforms, automatic exam generation and student
+              performance analysis.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <Image
+              src={Logistica}
+              alt="Logistics"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Logistics and Transportation</h3>
+            <p class="text-sm text-gray-600">
+              Optimized routes, real-time tracking and intelligent fleet control
+              with automated alerts.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <Image
+              src={Comercio}
+              alt="Retail and Commerce"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Retail and Commerce</h3>
+            <p class="text-sm text-gray-600">
+              E-commerce integrations, sales analysis and customer service
+              automation.
+            </p>
+          </div>
+
+          <div
+            class="bg-blue-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <Image
+              src={Marketing}
+              alt="Marketing"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Marketing and Sales</h3>
+            <p class="text-sm text-gray-600">
+              Campaign automation, lead analysis, customer tracking and AI
+              content generation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <FooterEn />
+  </main>
+</Layout>

@@ -1,0 +1,115 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+import Hero from "../../assets/hero_kimberly.png";
+import MockupSistema from "../../assets/mockup.png";
+import KimberlyClark from "../../assets/kck_logo.png";
+---
+
+<Layout>
+  <main>
+    <Navbar />
+
+    <!-- Hero -->
+    <section class="relative w-full h-screen">
+      <Image class="w-full h-full object-cover" src={Hero} alt="Hero image" />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="px-5 lg:px-0 mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20"
+      >
+        <Image src={KimberlyClark} alt="Kimberly Clark Logo" />
+        <h1 class="font-extrabold mb-4 text-5xl">Kimberly Clark (Ramos Arizpe)</h1>
+        <h1 class="text-3xl lg:text-4xl font-bold drop-shadow-lg">
+          Sistema de gestion de tramites y contratos
+        </h1>
+        <p class="text-sm lg:text-xl font-roboto-regular mt-4 drop-shadow-md">
+          Olvidate del papeleo: digitaliza y automatiza
+          todos los tramites de tu empresa con un solo sistema.
+        </p>
+      </div>
+    </section>
+
+    <!-- ¿QUÉ ES? -->
+    <section class="bg-gray-100 py-16 px-6 md:px-20 text-center text-gray-700">
+      <h2 class="text-3xl font-bold mb-6">¿Qué es el gestor de trámites?</h2>
+      <p class="max-w-4xl mx-auto text-lg">
+        Es una plataforma web donde tus empleados pueden registrar trámites con archivos PDF, asignar validadores y automatizar el flujo de aprobación desde cualquier dispositivo.
+      </p>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="bg-white py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-10">Beneficios Clave</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Registro desde cualquier dispositivo</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Validaciones automáticas</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Alertas por correo y WhatsApp</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Trazabilidad completa</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Integración con bases de datos</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Ahorro de tiempo y eliminación del papeleo</div>
+      </div>
+    </section>
+
+    <!-- PASOS -->
+    <section class="bg-gray-50 py-20 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-10">¿Cómo funciona?</h2>
+      <div class="grid md:grid-cols-5 gap-6 text-center text-sm text-gray-700">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">1</div>
+          <p>El usuario crea el trámite</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">2</div>
+          <p>Sube archivo y asigna verificadores</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">3</div>
+          <p>Se notifica automáticamente a cada responsable</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">4</div>
+          <p>El sistema registra los cambios y actualizaciones</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">5</div>
+          <p>El trámite finaliza y se archiva digitalmente</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOCKUP SISTEMA -->
+    <section class="bg-white py-20 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">Así luce por dentro</h2>
+      <Image
+        src={MockupSistema}
+        class="mx-auto rounded-xl w-full"
+        alt="Mockup del sistema"
+      />
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="bg-gray-100 py-20 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">Lo que dicen nuestros clientes</h2>
+      <blockquote class="max-w-3xl mx-auto text-lg italic text-gray-700">
+        “Desde que usamos el sistema de trámites de Neurovix, todo fluye 10 veces más rápido, lo que antes tomaba de 2 a 3 meses ahora se logra en menos de una semana. Ya no se pierde nada.”
+      </blockquote>
+      <p class="mt-4 text-sm text-gray-500">Lic. Julio - Responsable de Recursos Humanos, Kimberly Clark</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-blue-800 text-white text-center py-20 px-6 md:px-20">
+      <h2 class="text-4xl font-bold mb-4">¿Listo para automatizar tus trámites?</h2>
+      <p class="text-lg mb-6">Solicita una demo personalizada y descubre cómo podemos ayudarte.</p>
+      <a
+        href="/contacto"
+        class="bg-white text-blue-800 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
+      >
+        Solicitar Demo
+      </a>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>

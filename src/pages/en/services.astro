@@ -1,0 +1,174 @@
+---
+import NavbarSP from "../../components/NavbarSP.astro";
+import Layout from "../../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import Hero from "../../assets/servicios_hero.png";
+import Web from "../../assets/web_gray.png";
+import Mobile from "../../assets/iphone_gray.png";
+import Mantemiento from "../../assets/mantenimiento_gray.png";
+import Automatizacion from "../../assets/nodos_gray.png";
+import InteligenciaArtificial from "../../assets/ia_gray.png";
+import Cloud from "../../assets/nube_gray.png";
+import FooterEn from "../../components/FooterEn.astro";
+---
+
+<Layout>
+  <main>
+    <NavbarSP />
+
+    <section class="relative w-full h-screen">
+      <Image
+        class="w-full h-full object-cover"
+        src={Hero}
+        alt="Services Hero"
+      />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20 px-4"
+      >
+        <span class="text-sm uppercase tracking-widest text-blue-300 mb-2"
+          >Our Services</span
+        >
+        <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">
+          Custom-made technological solutions
+        </h1>
+        <p
+          class="text-lg md:text-xl font-roboto-regular mt-4 drop-shadow-md max-w-3xl"
+        >
+          We help you grow with custom software, intelligent automations
+          and cutting-edge technology.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="px-6 md:px-20 py-20 bg-gradient-to-b from-blue-50 to-white font-roboto-regular"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-12">
+          Our Services
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Web}
+              alt="Web development"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Web Development
+            </h2>
+            <p class="text-sm text-gray-600">
+              Fast, secure and scalable web applications made to measure
+              for your company.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Mobile}
+              alt="Mobile development"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Mobile Apps
+            </h2>
+            <p class="text-sm text-gray-600">
+              Android and iOS applications with smooth and
+              professional user experience.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Mantemiento}
+              alt="Technical support"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Support & Maintenance
+            </h2>
+            <p class="text-sm text-gray-600">
+              We keep your systems in optimal conditions with reliable
+              technical support.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={Automatizacion}
+              alt="Automation"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Process Automation
+            </h2>
+            <p class="text-sm text-gray-600">
+              We eliminate repetitive tasks with efficient and
+              customized automations.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={InteligenciaArtificial}
+              alt="AI"
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Artificial Intelligence
+            </h2>
+            <p class="text-sm text-gray-600">
+              Power your operations with AI models that learn and
+              optimize your workflow.
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image src={Cloud} alt="Cloud" class="w-16 h-16 mx-auto mb-4" />
+            <h2 class="text-xl font-semibold mb-2 text-gray-800">
+              Local or Cloud Installation
+            </h2>
+            <p class="text-sm text-gray-600">
+              Solution deployment on local servers or cloud according to your
+              needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 md:px-20 bg-blue-900 text-white text-center font-roboto-regular">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Ready to transform your business?
+        </h2>
+        <p class="text-lg md:text-xl font-roboto-regular mb-6">
+          Tell us what you need and we'll help you create a custom-made
+          solution. From automations to complete platforms, we're
+          ready to help you.
+        </p>
+        <a
+          href="/en/contact"
+          class="inline-block bg-blue-600 hover:bg-blue-700 transition text-white font-semibold px-6 py-3 rounded-lg"
+        >
+          Request Quote
+        </a>
+      </div>
+    </section>
+
+    <FooterEn />
+  </main>
+</Layout>

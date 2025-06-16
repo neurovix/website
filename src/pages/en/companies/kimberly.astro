@@ -1,0 +1,115 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import FooterEn from "../../../components/FooterEn.astro";
+import Image from "astro/components/Image.astro";
+import Hero from "../../../assets/hero_kimberly.png";
+import MockupSistema from "../../../assets/mockup.png";
+import KimberlyClark from "../../../assets/kck_logo.png";
+import NavbarSP from "../../../components/NavbarSP.astro";
+---
+
+<Layout>
+  <main>
+    <NavbarSP />
+
+    <!-- Hero -->
+    <section class="relative w-full h-screen">
+      <Image class="w-full h-full object-cover" src={Hero} alt="Hero image" />
+      <div class="absolute inset-0 bg-black/50 z-10"></div>
+      <div
+        class="px-5 lg:px-0 mt-28 absolute inset-0 flex flex-col items-center justify-center text-white text-center z-20"
+      >
+        <Image src={KimberlyClark} alt="Kimberly Clark Logo" />
+        <h1 class="font-extrabold mb-4 text-5xl">Kimberly Clark (Ramos Arizpe)</h1>
+        <h1 class="text-3xl lg:text-4xl font-bold drop-shadow-lg">
+          Process and Contract Management System
+        </h1>
+        <p class="text-sm lg:text-xl font-roboto-regular mt-4 drop-shadow-md">
+          Forget about paperwork: digitize and automate
+          all your company's processes with a single system.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHAT IS IT? -->
+    <section class="bg-gray-100 py-16 px-6 md:px-20 text-center text-gray-700">
+      <h2 class="text-3xl font-bold mb-6">What is the process manager?</h2>
+      <p class="max-w-4xl mx-auto text-lg">
+        It's a web platform where your employees can register processes with PDF files, assign validators, and automate the approval workflow from any device.
+      </p>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="bg-white py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-10">Key Benefits</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Registration from any device</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Automatic validations</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Email and WhatsApp alerts</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Complete traceability</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Database integration</div>
+        <div class="bg-blue-100 p-6 rounded-xl shadow">✅ Time savings and paperwork elimination</div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="bg-gray-50 py-20 px-6 md:px-20">
+      <h2 class="text-3xl font-bold text-center mb-10">How does it work?</h2>
+      <div class="grid md:grid-cols-5 gap-6 text-center text-sm text-gray-700">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">1</div>
+          <p>User creates the process</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">2</div>
+          <p>Uploads file and assigns verifiers</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">3</div>
+          <p>Each responsible party is automatically notified</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">4</div>
+          <p>System records changes and updates</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mb-3 shadow-md">5</div>
+          <p>Process is completed and digitally archived</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYSTEM MOCKUP -->
+    <section class="bg-white py-20 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">This is how it looks inside</h2>
+      <Image
+        src={MockupSistema}
+        class="mx-auto rounded-xl w-full"
+        alt="System mockup"
+      />
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-gray-100 py-20 px-6 md:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-6">What our clients say</h2>
+      <blockquote class="max-w-3xl mx-auto text-lg italic text-gray-700">
+        "Since we started using Neurovix's process system, everything flows 10 times faster. What used to take 2 to 3 months is now accomplished in less than a week. Nothing gets lost anymore."
+      </blockquote>
+      <p class="mt-4 text-sm text-gray-500">Lic. Julio - Human Resources Manager, Kimberly Clark</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-blue-800 text-white text-center py-20 px-6 md:px-20">
+      <h2 class="text-4xl font-bold mb-4">Ready to automate your processes?</h2>
+      <p class="text-lg mb-6">Request a personalized demo and discover how we can help you.</p>
+      <a
+        href="/en/contact"
+        class="bg-white text-blue-800 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
+      >
+        Request Demo
+      </a>
+    </section>
+
+    <FooterEn />
+  </main>
+</Layout>
