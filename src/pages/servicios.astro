@@ -10,6 +10,8 @@ import Mantemiento from "../assets/mantenimiento_gray.png";
 import Automatizacion from "../assets/nodos_gray.png";
 import InteligenciaArtificial from "../assets/ia_gray.png";
 import Cloud from "../assets/nube_gray.png";
+import CocaCola from "../assets/ads/coca_cola_2.jpeg";
+import GM from "../assets/ads/gm_1.jpeg";
 ---
 
 <Layout>
@@ -46,7 +48,7 @@ import Cloud from "../assets/nube_gray.png";
     >
       <div class="max-w-6xl mx-auto text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-12">
-          Nuestros Servicios
+          Nuestros Servicios Tecnologicos
         </h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div
@@ -150,7 +152,44 @@ import Cloud from "../assets/nube_gray.png";
       </div>
     </section>
 
-    <section class="py-16 px-6 md:px-20 bg-blue-900 text-white text-center font-roboto-regular">
+    <section class="px-6 md:px-20 py-20 font-roboto-regular">
+      <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-12">
+          Nuestros Servicios Publicitarios
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={CocaCola}
+              alt="Coca Cola Flyer"
+              class="w-72 h-72 mx-auto mb-4"
+            />
+            <h2 class="text-2xl font-semibold text-gray-800">
+              Creacion de anuncios
+            </h2>
+          </div>
+
+          <div
+            class="bg-white shadow-xl rounded-2xl p-6 hover:shadow-xl transition"
+          >
+            <Image
+              src={GM}
+              alt="GM ad"
+              class="w-72 h-72 mx-auto mb-4"
+            />
+            <h2 class="text-2xl font-semibold text-gray-800">
+              Creacion de flyers
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-16 px-6 md:px-20 bg-blue-900 text-white text-center font-roboto-regular"
+    >
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
           ¿Listo para transformar tu negocio?
